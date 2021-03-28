@@ -1,0 +1,96 @@
+﻿{
+    "configurations": [
+        {
+            "name": "MSVC-x64-Release",
+            "generator": "Ninja",
+            "configurationType": "RelWithDebInfo",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "CPU_ARCHITECTURE",
+                    "value": "x86",
+                    "type": "STRING"
+                },
+                {
+                    "name": "CPU_ARCHITECTURE_BIT",
+                    "value": "64",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "MSVC-x64-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "CPU_ARCHITECTURE",
+                    "value": "x86",
+                    "type": "STRING"
+                },
+                {
+                    "name": "CPU_ARCHITECTURE_BIT",
+                    "value": "64",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "x64-Clang-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "clang_cl_x64_x64" ],
+            "variables": [
+                {
+                    "name": "CPU_ARCHITECTURE",
+                    "value": "x86",
+                    "type": "STRING"
+                },
+                {
+                    "name": "CPU_ARCHITECTURE_BIT",
+                    "value": "64",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "x64-Clang-Release",
+            "generator": "Ninja",
+            "configurationType": "RelWithDebInfo",
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "clang_cl_x64_x64" ],
+            "variables": [
+                {
+                    "name": "CPU_ARCHITECTURE",
+                    "value": "x86",
+                    "type": "STRING"
+                },
+                {
+                    "name": "CPU_ARCHITECTURE_BIT",
+                    "value": "64",
+                    "type": "STRING"
+                }
+            ]
+        }
+    ]
+}
